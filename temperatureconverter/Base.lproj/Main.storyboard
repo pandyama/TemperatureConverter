@@ -29,19 +29,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVY-ZS-gaB">
-                                <rect key="frame" x="249" y="355" width="89" height="43"/>
-                                <color key="backgroundColor" red="1" green="0.45913874062128368" blue="0.42008280400097953" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="89" id="5jO-aI-l8w"/>
-                                    <constraint firstAttribute="height" constant="43" id="bMh-1V-uPj"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="85" id="hLE-iu-7eh"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="43" id="lm1-Xh-kIY"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="-60" maxValue="60" translatesAutoresizingMaskIntoConstraints="NO" id="Ivt-Xt-nOy">
                                 <rect key="frame" x="33" y="517" width="348" height="31"/>
                                 <constraints>
@@ -65,13 +52,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slide Temperature" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8An-aw-Rzb">
-                                <rect key="frame" x="127.5" y="62" width="159" height="43"/>
-                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <rect key="frame" x="98.5" y="62" width="217.5" height="43"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="159" id="McE-g9-bMa"/>
                                     <constraint firstAttribute="height" constant="43" id="SXi-uz-mB1"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" systemColor="labelColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVY-ZS-gaB">
+                                <rect key="frame" x="249" y="355" width="89" height="43"/>
+                                <color key="backgroundColor" red="1" green="0.45913874062128368" blue="0.42008280400097953" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="89" id="5jO-aI-l8w"/>
+                                    <constraint firstAttribute="height" constant="43" id="bMh-1V-uPj"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="85" id="hLE-iu-7eh"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="43" id="lm1-Xh-kIY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -82,6 +81,7 @@
                             <constraint firstItem="rVY-ZS-gaB" firstAttribute="height" secondItem="nHU-Wf-tI3" secondAttribute="height" id="1As-LW-8lc"/>
                             <constraint firstItem="UhJ-gm-HWb" firstAttribute="leading" secondItem="QIU-ro-Rc7" secondAttribute="trailing" constant="80" id="4cG-1J-4IR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UhJ-gm-HWb" secondAttribute="bottom" constant="516" id="5EV-SB-26V"/>
+                            <constraint firstItem="8An-aw-Rzb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Ld-ZU-kgF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nHU-Wf-tI3" secondAttribute="bottom" constant="464" id="6VP-Ov-pQB"/>
                             <constraint firstItem="Ivt-Xt-nOy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6gL-Xl-fq7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rVY-ZS-gaB" secondAttribute="trailing" constant="76" id="6oe-qN-axY"/>
@@ -107,6 +107,7 @@
                             <constraint firstItem="UhJ-gm-HWb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.195652" constant="31" id="QJA-eN-oau"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ivt-Xt-nOy" secondAttribute="bottom" constant="315" id="SbF-HF-ccj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nHU-Wf-tI3" secondAttribute="trailing" constant="260" id="ScM-Km-wRT"/>
+                            <constraint firstItem="8An-aw-Rzb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ug9-hC-Biw"/>
                             <constraint firstItem="rVY-ZS-gaB" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0479911" id="Ulu-lx-ZgG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QIU-ro-Rc7" secondAttribute="bottom" constant="516" id="VmT-oS-2qe"/>
                             <constraint firstItem="QIU-ro-Rc7" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0234375" id="Z0x-de-uml"/>
@@ -137,7 +138,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-342.02898550724638" y="79.6875"/>
+            <point key="canvasLocation" x="-1475" y="7"/>
         </scene>
     </scenes>
     <resources>

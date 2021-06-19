@@ -16,8 +16,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        appLabel.layer.cornerRadius = 5
+//        appLabel.layer.cornerRadius = 5
+//        appLabel.layer.masksToBounds = true
+        
         appLabel.layer.masksToBounds = true
+        appLabel.layer.cornerRadius = 8.0
         
         fahrenheitLabel.layer.cornerRadius = 8
         fahrenheitLabel.layer.masksToBounds = true
@@ -39,5 +42,24 @@ class ViewController: UIViewController {
         celsiusLabel.text = String(tempC)
     }
     
+}
+
+@IBDesignable class PaddingLabel: UILabel {
+    
+    @IBInspectable var topInset: CGFloat = 5.0
+    @IBInspectable var bottomInset: CGFloat = 5.0
+    @IBInspectable var leftInset: CGFloat = 16.0
+    @IBInspectable var rightInset: CGFloat = 16.0
+    
+    override func drawText(in rect: CGRect) {
+        let insets = UIEdgeInsets.init(top: topInset, left: leftInset, bottom: bottomInset, right: rightInset)
+        super.drawText(in: rect.inset(by: insets))
+    }
+    
+    override var intrinsicContentSize: CGSize {
+        let size = super.intrinsicContentSize
+        return CGSize(width: size.width + leftInset + rightInset,
+                      height: size.height + topInset + bottomInset)
+    }
 }
 
